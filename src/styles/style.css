@@ -1,0 +1,17 @@
+@import "roboto.css";
+
+.header1 {
+  color: blue;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: green;
+}
+.logo {
+  background-image: url("../assets/js.jpg");
+  background-size: cover;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+}
