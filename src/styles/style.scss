@@ -1,15 +1,21 @@
 @import "roboto.css";
 
-body {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
-  font-family: "Roboto", sans-serif;
 }
+
+body {
+  background-color: #010101;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.55;
+}
+
 header {
   background-color: rgba(33, 33, 33, 1);
 }
+
 .container {
   width: 1000px;
   margin: 0 auto;
@@ -119,5 +125,24 @@ a {
 
     display: inline-block;
     vertical-align: middle;
+  }
+}
+
+.sub-head {
+  position: relative;
+}
+.layers {
+  height: 442px;
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  .layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
   }
 }
