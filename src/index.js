@@ -1,4 +1,6 @@
 import "./styles/style.scss";
+
+// animate menu
 const marker = document.querySelector("#marker");
 const item = document.querySelectorAll("ul li a");
 function Indicator(e) {
@@ -9,4 +11,9 @@ item.forEach((link) => {
   link.addEventListener("mousemove", (e) => {
     Indicator(e.target);
   });
+});
+
+// parallax
+window.addEventListener("scroll", (e) => {
+  document.body.style.cssText = `--scrollTop: ${window.scrollY}px`;
 });
