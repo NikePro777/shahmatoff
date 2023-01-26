@@ -137,8 +137,8 @@ a {
   position: relative;
 }
 .layers {
-  // height: 442px;
-  height: 100vh;
+  height: 442px;
+  // height: 100vh;
   display: flex;
   background-color: #fff;
   align-items: center;
@@ -162,9 +162,17 @@ a {
 .layers__middle {
   transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
 }
-.layers__front {
+.layers__front-top {
+  transform: translate3d(0, calc(var(--scrollTop) / 4), 0);
+}
+.layers__front-bottom {
   transform: translate3d(0, calc(var(--scrollTop) / 12), 0);
 }
+.layer__text {
+  z-index: 1;
+  transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
+}
+
 article {
   min-height: 100vh;
 }
