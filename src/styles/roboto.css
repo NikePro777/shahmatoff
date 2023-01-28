@@ -7,3 +7,9 @@
   font-family: "Breeze";
   src: url("../assets/fonts/breeze/MorningBreeze.otf") format("truetype");
 }
+
+@font-face {
+  font-family: Marck;
+  src: url("../assets/fonts/Marck_Script/MarckScript-Regular.ttf")
+    format("truetype");
+}
