@@ -1,10 +1,15 @@
 @import "roboto.css";
 
-* {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font: inherit;
+  border: 0;
 }
+
 :root {
   --index: calc(1vw+1vh);
 }
@@ -140,6 +145,8 @@ a {
 .sub-head {
   position: relative;
 }
+
+//start paralax
 .layers {
   height: 442px;
   // height: 100vh;
@@ -201,31 +208,50 @@ a {
   }
 }
 
-// article {
-//   min-height: 100vh;
-// }
+// finish paralax
 
 .social {
+  display: flex;
   color: #fff;
   .adres {
     .adres-icon {
       width: 64px;
       height: 64px;
-      background: url("../assets/images/social_icons/route-icon.svg");
+      // background: url("../assets/images/social_icons/route-icon.svg");
     }
   }
   .primetime {
     .primetime-icon {
       width: 64px;
       height: 64px;
-      background: url("../assets/images/social_icons/time-icon.svg");
+      // background: url("../assets/images/social_icons/time-icon.svg");
     }
   }
-  // .social__network{
-  //   a{
+  .social__network {
+    width: 400px;
 
-  //   }
-  // }
+    a {
+      cursor: pointer;
+    }
+  }
+
+  .application {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    .phone {
+      text-decoration: none;
+    }
+    .aplicate {
+      text-decoration: none;
+      color: rgb(33, 33, 33);
+      background-color: rgb(255, 186, 0);
+      box-shadow: 0px -2px 0px rgb(215 157 0) inset,
+        0px 2px 0px rgb(255 211 91 / 78%) inset,
+        0px 4px 12px rgb(226 197 0 / 5%);
+      border-radius: 21px;
+    }
+  }
 }
 
 // Video
