@@ -1,14 +1,5 @@
 @import "roboto.css";
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font: inherit;
-  border: 0;
-}
+@import "_global.css";
 
 :root {
   --index: calc(1vw+1vh);
@@ -217,21 +208,26 @@ a {
     .adres-icon {
       width: 64px;
       height: 64px;
-      // background: url("../assets/images/social_icons/route-icon.svg");
+      background: url("../assets/images/social_icons/route-icon.svg");
     }
   }
   .primetime {
     .primetime-icon {
       width: 64px;
       height: 64px;
-      // background: url("../assets/images/social_icons/time-icon.svg");
+      background: url("../assets/images/social_icons/time-icon.svg");
     }
   }
   .social__network {
     width: 400px;
-
     a {
+      fill: rgba(255, 255, 255, 0.5);
       cursor: pointer;
+      width: 60px;
+      height: 60px;
+    }
+    &-vk {
+      // background: url(../assets/images/social_icons/vk-icon.svg);
     }
   }
 
